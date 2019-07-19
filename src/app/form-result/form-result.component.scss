@@ -5,3 +5,40 @@
     height: 100vh;
     width: 100%;
 }
+
+.resultMain {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20%;
+    color: white;
+    animation: fadeInOpacity 8s ease-in;
+    opacity: .75;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100% {
+        opacity: .75;
+    }
+
+}
+
+.stars {
+    height: 100%;
+    background: url('http://pngimg.com/uploads/star/star_PNG76909.png');
+    
+    animation: star 45s linear infinite;
+}
+@keyframes star {
+    0% {
+        background-position: 0% 0%;
+    }
+    100%{
+        background-position: 100% 100%;
+    }
+}

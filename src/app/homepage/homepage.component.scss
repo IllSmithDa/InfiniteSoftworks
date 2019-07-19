@@ -15,7 +15,7 @@
         margin-top: 20%;
         color: white;
         animation: fadeInOpacity 8s ease-in;
-        opacity: 1;
+        opacity: .75;
     }
     .homepageSecond {
         text-align: center;
@@ -24,7 +24,7 @@
         margin-top: 65%;
         color: white;
         animation: fadeInOpacity 8s ease-in;
-        opacity: 1;
+        opacity: .75;
     }
     @keyframes fadeInOpacity {
         0% {
@@ -33,36 +33,23 @@
         50%{
             opacity: 1;
         }
-
+        100% {
+            opacity: .75;
+        }
     }
 
-    .rain {
+    .stars {
         height: 75%;
         background: url('http://pngimg.com/uploads/star/star_PNG76909.png');
         
-        animation: rain 45s linear infinite;
+        animation: star 45s linear infinite;
     }
-    @keyframes rain {
+    @keyframes star {
         0% {
             background-position: 0% 0%;
         }
         100%{
             background-position: 100% 20%;
-        }
-    }
-
-    .rain2 {
-        height: 50%;
-        background: url('http://pngimg.com/uploads/star/star_PNG76909.png');
-        
-        animation: rain 30s linear infinite;
-    }
-    @keyframes rain2 {
-        0% {
-            background-position: 0% 0%;
-        }
-        100%{
-            background-position: 50% 50%;
         }
     }
 
