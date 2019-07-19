@@ -1,0 +1,24 @@
+<div class="webToCase">
+    <div class="stars">
+      <app-navbar></app-navbar>
+        <div class='webCaseForm'>
+          <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+            <h2 class='formTitle'>New Case</h2>
+            <input type="hidden" name="orgid" value="00D4P000001d5kz">
+            <input type=hidden name="retURL" value="https://www.google.com"> 
+            <!--  ----------------------------------------------------------------------  -->
+            <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+            <!--  these lines if you wish to test in debug mode.                          -->
+            <!--  <input type="hidden" name="debug" value=1>                              -->
+            <!--  <input type="hidden" name="debugEmail" value="sam404kim@gmail.com">     -->
+            <!--  ----------------------------------------------------------------------  -->
+            <label class="inputLabel" for="name"><b>Contact Name:</b></label><input class="webCaseInput" id="name" maxlength="80" name="name" size="20" type="text" /><br>        
+            <label class="inputLabel" for="email"><b>Email:</b></label><input class="webCaseInput" id="email" maxlength="80" name="email" size="20" type="text" /><br>     
+            <label class="inputLabel" for="phone"><b>Phone:</b></label><input class="webCaseInput" id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+            <label class="inputLabel" for="subject"><b>Subject:</b></label><input class="webCaseInput" id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+            <label class="inputLabel" for="description"><b>Description:</b></label><textarea class="webCaseInput" name="description"></textarea><br>
+            <input class="formButton" type="submit" name="submit">
+            </form>       
+      </div>
+    </div>
+  </div>

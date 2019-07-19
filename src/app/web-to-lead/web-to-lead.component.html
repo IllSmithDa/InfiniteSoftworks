@@ -1,0 +1,21 @@
+<div class="webToLead">
+  <div class="stars">
+    <app-navbar></app-navbar>
+    <div class='webLeadForm'>
+      <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+        <h2 class='formTitle'>New Leads</h2>
+        <input type="hidden" name="oid" value="00D4P000001d5kz"/>
+        <input type=hidden name="retURL" value="https://www.google.com"> 
+        <input type="hidden" name="debug" />                            
+        <input type="hidden" name="debugEmail" value="sam404kim@gmail.com" />    
+        <label class='inputLabel' for="first_name"><b>First Name:</b></label><input class="webLeadInput" id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br/>
+        <label class='inputLabel' for="last_name"><b>Last Name:</b></label><input class="webLeadInput" id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br/>
+        <label class='inputLabel' for="email"><b>Email:</b></label><input class="webLeadInput" id="email" maxlength="80" name="email" size="20" type="text" /><br/>
+        <label class='inputLabel' for="company"><b>Company:</b></label><input class="webLeadInput" id="company" maxlength="40" name="company" size="20" type="text" /><br/>
+        <label class='inputLabel' for="city"><b>City:</b></label><input class="webLeadInput" id="city" maxlength="40" name="city" size="20" type="text" /><br />
+        <label class='inputLabel' for="state"><b>State/Province:</b></label><input class="webLeadInput" id="state" maxlength="20" name="state" size="20" type="text" /><br />
+        <input class="formButton" type="submit" name="submit" />
+      </form>
+    </div>
+  </div>
+</div>

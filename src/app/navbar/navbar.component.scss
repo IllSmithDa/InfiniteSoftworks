@@ -1,0 +1,97 @@
+.appTitle {
+    color: whitesmoke;
+    cursor: pointer;
+ }
+.navbar-container{
+    height: 4em;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.navbarButton {
+    font-size: 1.2em;
+    margin-left: 1em;
+    background-color: black;
+    color: white;
+    border: black;
+    font-display: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+.left-container {
+    width: 20%;
+}
+.right-container {
+    min-width: 80%; 
+    display: flex;
+    justify-content: flex-end;  
+    width: 10%;
+}
+.app-title {
+
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    top: 11%;
+    margin-left: 1em;
+    margin-right: 2px;
+    height: 80%;
+}
+.dropdown-button {
+    cursor: pointer;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+    width: 9.5em;    
+    max-width: 9.5em;
+    height: 97%;
+
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    text-decoration: none;
+    padding: 1em;
+    
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.search-input {
+    // width set to 50 percent of browser width;
+    width: 90%;
+    // height cannot exceed 80% of container size
+    height: 70%;
+    // position relative to container
+    position: relative;
+    // move down by 5 percent
+    top: 12%;
+    // set font 1.5x larger than default size
+    font-size: 150%;
+    // inner text padding 
+    padding-left: 1%;
+}
+
+.search-button {
+    height: 80%;
+    margin-left: 2px;
+    position: relative;
+    top: 11%;
+    width: 10%;
+    cursor: pointer;
+}
+
+.dropdown-item {
+    cursor: pointer;
+    font-size: 1.3em;
+}
