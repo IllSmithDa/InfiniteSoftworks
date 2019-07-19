@@ -7,7 +7,7 @@ app.use(express.static(__dirname + '/dist/infiniteworks'));
 
 // Send all requests to index.html
 app.get('/*', function(req, res) {
-  res.sendFile(path.join(__dirname + '/dist/infiniteworks/index.html'));
+  res.sendFile(path.join(__dirname + '/dist/infiniteworks/src/index.html'));
 });
 
 // default Heroku port
