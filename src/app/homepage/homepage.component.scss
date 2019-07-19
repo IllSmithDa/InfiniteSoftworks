@@ -21,11 +21,13 @@
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 3em;
         margin-top: 65%;
-        padding-bottom: 25%;
         color: white;
         animation: fadeInOpacity 8s ease-in;
         opacity: .75;
+        animation-play-state: paused;
+        padding-bottom: 25%;
     }
+
     @keyframes fadeInOpacity {
         0% {
             opacity: 0;
@@ -39,7 +41,6 @@
     }
 
     .stars {
-        height: 200%;
         background: url('http://pngimg.com/uploads/star/star_PNG76909.png');
         
         animation: star 45s linear infinite;
@@ -60,7 +61,22 @@
         margin-left: 5%;
         width: 90%;
         margin-top: 25%;
+        opacity: 1;
+        animation: tableAnim 1s ease-in;
       }
+      @keyframes tableAnim {
+        0% {
+            margin-left: 15%;
+            opacity: 0;
+        }
+        50% {
+            margin-left: 3%;
+        }
+        100% {
+            margin-left: 5%;
+            opacity: 1;
+        }
+    }
       
       td, th {
         background-color: black;
