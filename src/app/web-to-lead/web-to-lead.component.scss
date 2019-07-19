@@ -51,3 +51,15 @@
         background-position: 100% 100%;
     }
 }
+@media all and (max-width: 700px) { 
+    .webLeadForm {
+        margin-left: 5%;
+        width: 90%;
+    }
+    .formButton {
+        width: 40%;
+    }
+    .formTitle {
+        font-size: 19px;
+    }
+}
