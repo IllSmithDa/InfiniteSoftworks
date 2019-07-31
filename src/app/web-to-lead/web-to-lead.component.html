@@ -2,20 +2,89 @@
   <div class="stars">
     <app-navbar></app-navbar>
     <div class='webLeadForm'>
+      <h1 class='formTitle'>New Leads</h1>
       <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-        <h2 class='formTitle'>New Leads</h2>
-        <input type="hidden" name="oid" value="00D4P000001d5kz"/>
-        <input type=hidden name="retURL" value="http://infiniteworks.herokuapp.com/formResult"> 
-        <input type="hidden" name="debug" />                            
-        <input type="hidden" name="debugEmail" value="sam404kim@gmail.com" />    
-        <label class='inputLabel' for="first_name"><b>First Name:</b></label><input class="webLeadInput" id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br/>
-        <label class='inputLabel' for="last_name"><b>Last Name:</b></label><input class="webLeadInput" id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br/>
-        <label class='inputLabel' for="email"><b>Email:</b></label><input class="webLeadInput" id="email" maxlength="80" name="email" size="20" type="text" /><br/>
-        <label class='inputLabel' for="company"><b>Company:</b></label><input class="webLeadInput" id="company" maxlength="40" name="company" size="20" type="text" /><br/>
-        <label class='inputLabel' for="city"><b>City:</b></label><input class="webLeadInput" id="city" maxlength="40" name="city" size="20" type="text" /><br />
-        <label class='inputLabel' for="state"><b>State/Province:</b></label><input class="webLeadInput" id="state" maxlength="20" name="state" size="20" type="text" /><br />
-        <input class="formButton" type="submit" name="submit" />
+        <input class='inputLabel' type=hidden name="oid" value="00D4P000001d5kz">
+        <input class='inputLabel' type=hidden name="retURL" value="http://infiniteworks.herokuapp.com/formResult">
+        
+        <!--  ----------------------------------------------------------------------  -->
+        <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+        <!--  these lines if you wish to test in debug mode.                          -->
+        <!--  <input type="hidden" name="debug" value=1>                              -->
+        <!--  <input type="hidden" name="debugEmail" value="sam404kim@gmail.com">     -->
+        <!--  ----------------------------------------------------------------------  -->
+        
+        <label class='inputLabel' for="salutation">Salutation</label><select class="webLeadInput" id="salutation" name="salutation"><option value="">--None--</option><option value="Mr.">Mr.</option>
+        <option value="Ms.">Ms.</option>
+        <option value="Mrs.">Mrs.</option>
+        <option value="Dr.">Dr.</option>
+        <option value="Prof.">Prof.</option>
+        </select><br>
+        
+        <label class='inputLabel' for="first_name">First Name</label><input class="webLeadInput" id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+        
+        <label class='inputLabel' for="last_name">Last Name*</label><input class="webLeadInput" id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+        
+        <label class='inputLabel' for="company">Company*</label><input class="webLeadInput" id="company" maxlength="40" name="company" size="20" type="text" /><br>
+        
+        <label class='inputLabel' for="email">Email</label><input class="webLeadInput" id="email" maxlength="80" name="email" size="20" type="text" /><br>
+        
+        <label class='inputLabel'>Product Interests:</label><select class="webLeadInput" id="00N4P00000ExzOe" multiple="multiple" name="00N4P00000ExzOe" title="Product Interests"><option value="Video Game Software">Video Game Software</option>
+        <option value="Game Engine Software">Game Engine Software</option>
+        <option value="Other Software">Other Software</option>
+        <option value="Video Game Console">Video Game Console</option>
+        <option value="VR Hardware">VR Hardware</option>
+        <option value="Other Hardware">Other Hardware</option>
+        </select><br>
+        
+        <label class='inputLabel' for="phone">Phone</label><input class="webLeadInput" id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+        
+        <label class='inputLabel' for="mobile">Mobile</label><input class="webLeadInput" id="mobile" maxlength="40" name="mobile" size="20" type="text" /><br>
+        
+        <label class='inputLabel' for="fax">Fax</label><input class="webLeadInput" id="fax" maxlength="40" name="fax" size="20" type="text" /><br>
+        
+        <label class='inputLabel' for="url">Website</label><input class="webLeadInput" id="url" maxlength="80" name="url" size="20" type="text" /><br>
+        
+        <label class='inputLabel' for="street">Street</label><textarea class="webLeadInput" name="street"></textarea><br>
+        
+        <label class='inputLabel' for="city">City</label><input class="webLeadInput" id="city" maxlength="40" name="city" size="20" type="text" /><br>
+        
+        <label class='inputLabel' for="state">State/Province</label><input class="webLeadInput" id="state" maxlength="20" name="state" size="20" type="text" /><br>
+        
+        <label class='inputLabel' for="zip">Zip</label><input  class="webLeadInput" id="zip" maxlength="20" name="zip" size="20" type="text" /><br>
+        
+        <label class='inputLabel' for="country">Country</label><input class="webLeadInput" id="country" maxlength="40" name="country" size="20" type="text" /><br>
+        
+        <input class="formButton" type="submit" name="submit">
+  
       </form>
     </div>
   </div>
+  <table>
+    <tr>
+      <th>Studios</th>
+      <th>Contact</th>
+      <th>Country</th>
+    </tr>
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td>Centro comercial Moctezuma</td>
+      <td>Francisco Chang</td>
+      <td>Mexico</td>
+    </tr>
+    <tr>
+      <td>Ernst Handel</td>
+      <td>Roland Mendel</td>
+      <td>Austria</td>
+    </tr> 
+    <tr>
+      <td>Laughing Bacchus Winecellars</td>
+      <td>Yoshi Tannamuri</td>
+      <td>Canada</td>
+    </tr>
+  </table>
 </div>

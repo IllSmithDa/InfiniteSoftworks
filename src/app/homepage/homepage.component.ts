@@ -24,7 +24,6 @@ export class HomepageComponent implements OnInit {
         return false;
       }
     }
-    let header = document.getElementById("appTitle");
     let secondHeader = document.getElementById("secondTitle");
 
     // Event listener which will check if view port is in
@@ -34,12 +33,6 @@ export class HomepageComponent implements OnInit {
       }
     }, false);
 
-    // Event listener which will check if view port is in
-    window.addEventListener('scroll', function (event) {
-      if (isInViewport(header)) {
-        header.style.animationPlayState = "runnung";
-      }
-    }, false);
   }
 
 }
